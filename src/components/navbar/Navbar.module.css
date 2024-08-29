@@ -4,8 +4,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    margin: 20px 70px;
+    height: 50px;
+    margin: 15px 9rem;
 }
 
 .checkout {
@@ -18,16 +18,20 @@
 .count {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 6rem;
     background-color: red;
     color: white;
     border-radius: 50%;
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     font-weight: bold;
     line-height: 1;
+}
+
+p {
+    font-size: 12px;
 }
