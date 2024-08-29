@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { toast } from 'react-toastify';
-import { AddItem, ExitItem } from "../utill/config";
+import { AddItem, RemoveItem } from "../utill/config";
 
 const initialState = {
     items: [],
@@ -18,8 +18,11 @@ const CardSlice = createSlice({
 
         },
         removeItem: (state, action) => {
+            const { id } = action.payload;
+            // Filter out the item with the matching id
             state.items = state.items.filter(item => item.id !== action.payload.id);
             state.totalCount -= 1;
+            toast.success(RemoveItem);
         }
     }
 });

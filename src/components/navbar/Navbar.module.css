@@ -15,6 +15,10 @@
     margin-right: -45px;
 }
 
+.checkout:hover {
+    cursor: pointer;
+}
+
 .count {
     position: absolute;
     top: 20px;

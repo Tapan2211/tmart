@@ -1,11 +1,11 @@
 import React from "react";
 import styles from './Header.module.css';
 
-function Header() {
+function Header({ title, subTitle }) {
     return (
         <div className={styles.main}>
-            <h1>New Arrival</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            {title && <h1>{title}</h1>}
+            {subTitle && <p>{subTitle}</p>}
         </div>
     )
 }

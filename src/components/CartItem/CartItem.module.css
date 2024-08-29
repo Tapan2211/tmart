@@ -1,0 +1,132 @@
+.main {}
+
+.sub_div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cartItem {
+    flex: 0 0 65%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px;
+}
+
+.checkout {
+    flex: 0 0 28%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px;
+}
+
+.checkout p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.item {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.checkout_div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.checkout_div2 {
+    flex: 2;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.productImage {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.promoDiv {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.input {
+    width: 58%;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.button {
+    width: 90px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.button:hover {
+    background-color: #444;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalAmount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.totalAmount p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order_button {
+    width: 100%;
+    /* margin-left: 20px; */
+    margin-right: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.order_button:hover {
+    background-color: #444;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}

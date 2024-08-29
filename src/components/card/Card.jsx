@@ -12,7 +12,7 @@ function Card({ send }) {
 
     const handleClick = () => {
         console.log(name)
-        dispatch(addItem(item));
+        dispatch(addItem(send));
     }
 
     return (
