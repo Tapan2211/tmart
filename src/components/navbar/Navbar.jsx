@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 function Navbar() {
 
     const navigate = useNavigate();
-    const count = useSelector((state) => state.cart.totalCount);
+    const count = useSelector((state) => state.cart.totalItems);
 
     const handleClick = () => {
         navigate('/cart');
