@@ -17,7 +17,7 @@ function CartItem({ send }) {
     const dispatch = useDispatch();
     const items = useSelector((state) => state.cart.items);
     const count = useSelector((state) => state.cart.totalCount);
-
+    console.log("COUNT", items)
     // Calculate the total amount
     const totalAmount = items.reduce((total, item) => total + (item.price * item.quantity), 0);
     // Calculate discounted total
