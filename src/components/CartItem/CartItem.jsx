@@ -21,6 +21,7 @@ function CartItem({ send }) {
     // Calculate the total amount
     const totalAmount = items.reduce((total, item) => total + (item.price * item.quantity), 0);
     // Calculate discounted total
+    const discountAmount = (totalAmount * discount / 100);
     const discountedTotal = totalAmount - (totalAmount * discount / 100);
 
     const handleDiscountCodeChange = (e) => {
@@ -135,6 +136,13 @@ function CartItem({ send }) {
                             </div>
 
                             <div className={styles.total}>
+                                {isDiscountApplied && (
+                                    <div className={styles.totalAmount}>
+                                        <p>Promo Code :</p>
+                                        <p>₹{discountAmount.toFixed(2)}</p>
+                                    </div>
+                                )}
+
                                 <div className={styles.totalAmount}>
                                     <p>Total :</p>
                                     <p>₹{discountedTotal.toFixed(2)}</p>
